@@ -96,6 +96,7 @@ minDist = inf(M,1);
 currDist = inf(M,1);
 preIdxs = zeros(M,1,'logical');
 idxs = (1:M)';
+p_idxs = idxs;
 for i = 1:N
     v1 = contour(i,:);
     v2 = contour(i+1,:);
@@ -112,9 +113,7 @@ for i = 1:N
 
     if ~isempty(p)
         % determine in or out
-        if i==1
-            vMid = (v1+v2)/2;
-        end
+        vMid = 0.5*(contour(1,:)+contour(2,:));
         l1 = v1-p;
         l2 = v2-p;
         l3 = vMid-p;

@@ -4,8 +4,8 @@ xv = cos(L)';
 yv = sin(L)';
 
 rng default
-xq = randn(250,1);
-yq = randn(250,1);
+xq = randn(500,1);
+yq = randn(500,1);
 
 %% use inpolygon2 function determine points whether inside polygon 
 points = [xq,yq];
@@ -22,7 +22,7 @@ title("points in polygon")
 xy=-2:.02:2;
 [x,y] = meshgrid(xy);
 points = [x(:),y(:)];
-dists2 = inpolygon2([xv,yv],points,true);
+dists2 = inpolygon2_mex([xv,yv],points,false);
 dists2 = reshape(dists2,size(x));
 
 figure;hold on;

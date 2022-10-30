@@ -1,0 +1,36 @@
+* 
+
+!/images/
+!/images/**/
+!/src/
+!/src/**/
+
+
+!.gitignore
+!*.json
+!*.md
+
+# license
+!LICENSE
+
+# python
+!*.py
+!*.ipynb
+
+# matlab
+!*.m
+!*.mlx
+
+# c/c++
+!*.cpp
+!*.hpp
+!*.h
+!*.c
+
+# cmake
+!CMakeLists.txt
+!Makefile
+
+!*.prj
+!*.txt
+!*.cgt

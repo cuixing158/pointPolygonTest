@@ -28,7 +28,7 @@ axis equal;
 title("points in polygon")
 ```
 
-![img](a.png)
+![img](images/a.png)
 
 ```matlab
 %% Distance Rating Heat Map
@@ -48,4 +48,4 @@ axis equal off
 title("signed distance hot map")
 ```
 
-![img](b.png)
+![img](images/b.png)
